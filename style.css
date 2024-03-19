@@ -1,40 +1,56 @@
-.list
-{
-    display: flex;
-    flex-direction: row;
-    padding: 0px;
-    justify-content: space-between;
-    align-items: center; /* Align items vertically */
+:root {
+    --main-color: #1c1c1c;
+    /* Define a variable named --main-color and set its value to red */
 }
-ul {
-    list-style-type: none; /* Remove bullets */
-    
-  }
-.navba
-{
+
+
+body {
+    position: relative;
+    background-color: var(--main-color);
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+}
+
+nav {
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+    display: flex;
     background-color: #2c2872;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+    flex-direction: row;
 }
-img
-{
-    height: 60px;
-    width: 100px;
+
+nav ul {
+    float: right;
+    width: 60%;
+    list-style: none;
+    padding: 25px 0;
+    margin: 0;
     
 }
-.img
-{
-   
+
+nav li {
+    float: left;
+    display: block;
+    list-style: outside none none;
+    margin: .5em 1em;
+    padding: 0;
 }
-.lis
-{
-    text-align: center;
-    color: white;
-}
-.list .lis {
-    flex: 1; /* Allow flex items to take maximum width */
-    display: flex;
-    justify-content: center; /* Align text horizontally */
-    align-items: center; /* Align text vertically */
-}
-.list .lis:first-child {
-    flex: 0 0 auto; /* Allow the first flex item to take only required width */
+
+nav a {
+    font-size: 2.5vh;
+    color: #fff;
+    text-decoration: none;
+    position: relative;
+    text-decoration: none;
+    padding: .5em .8em;
+    display: block;
 }
