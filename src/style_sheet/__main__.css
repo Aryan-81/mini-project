@@ -1,8 +1,9 @@
 @import url(nav.css);
+@import url(footer.css);
 /* @import url(footer.css); */
 
 :root {
-    --main-color: #1c1c1c;
+    --main-color: #ffffff;
     --blue-theme-color1: #2c2872;
     --nav-height:100px;
     margin: 0;
