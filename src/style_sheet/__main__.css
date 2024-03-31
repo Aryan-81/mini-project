@@ -1,10 +1,9 @@
 @import url(nav.css);
 @import url(footer.css);
-/* @import url(footer.css); */
 
 :root {
     --main-color: #ffffff;
-    --blue-theme-color1: #2c2872;
+    --blue-theme-color1: #f8f8ff;
     --nav-height:100px;
     margin: 0;
     /* Define a variable named --main-color and set its value to red */
@@ -20,8 +19,6 @@ body {
     margin: 0;
     padding: 0;
     overflow-x: hidden;
-    
-    
 }
 
 
