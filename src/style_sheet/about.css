@@ -1,0 +1,160 @@
+
+.intro{
+    display:flex;
+    
+}
+
+.pimg{
+
+margin-left:90px;
+margin-top:-200px;
+
+}
+
+.sir_name{
+    margin-top:-150px;
+    margin-left:30px;
+    background-color:rgb(2, 75, 170) ;
+    height:190px;
+    opacity:0.8;
+    width:500px;
+    border-radius:10px;
+    transition-duration: 0.3s;
+    transition-timing-function:ease-in-out;
+}
+.sir_name:hover{
+    opacity:1;
+    width:520px;
+    
+}
+
+
+.name{
+    margin-left:20px;
+    color:white;
+    font-family:"Roboto Condensed";
+}
+.ap{
+    margin-left:25px;
+    margin-top:-20px;
+    color:white;
+    font-family:"Roboto Condensed";
+}
+
+.profile{
+   height:240px;
+   width:240px;
+    border-radius: 50%;
+    border-style: solid;
+    border-width: 6px;
+    border-color: white;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+
+
+.roles{
+  
+    border-style: light;
+    border-width: 2px;
+    border-color:black;
+    height: 100px;
+    margin-left:50px;
+    margin-right:20px;
+    transition-duration: 0.3s;
+    transition-timing-function:ease-in-out;
+
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.roles:hover{
+    height:101px;
+    
+    box-shadow: 0 10px 15px rgba(0,0,0,.3);
+}
+
+.R{
+margin-left:15px;
+font-family:"Roboto Condensed";
+}
+.R_c{
+margin-left:15px;
+font-family:"Roboto Condensed";
+}
+.achievements{
+    margin-left:50px;
+    margin-right:20px;
+    margin-top:10px;
+    border-style: light;
+    border-width: 2px;
+    border-color: black;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    transition-duration: 0.3s;
+    transition-timing-function:ease-in-out;
+    height: 100px;
+}
+.achievements:hover{
+    height:101px;
+   
+    box-shadow: 0 10px 15px rgba(0,0,0,.3);
+}
+.A{
+    margin-left:15px;
+    font-family:"Roboto Condensed";
+}
+.A_c{
+    margin-left:15px;
+    font-family:"Roboto Condensed";
+}
+.goals{
+    margin-left:50px;
+    margin-right:20px;
+    margin-top:10px;
+    border-style: light;
+    border-width: 2px;
+    border-color: black;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    height: 100px;
+    transition-duration: 0.3s;
+    transition-timing-function:ease-in-out;
+}
+.goals:hover{
+    height:101px;
+    
+    box-shadow: 0 10px 15px rgba(0,0,0,.3);
+}
+.G{
+    margin-left:15px;
+    font-family:"Roboto Condensed";
+}
+.G_c{
+    margin-left:15px;
+    font-family:"Roboto Condensed";
+}
+.education_qualifications{
+    margin-left:50px;
+    margin-right:20px;
+    margin-top:10px;
+    margin-bottom:90px;
+    border-style: light;
+    border-width: 2px;
+    border-color: black;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    height: 100px;
+    transition-duration: 0.3s;
+    transition-timing-function:ease-in-out;
+}
+.education_qualifications:hover{
+    height:101px;
+    
+    box-shadow: 0 10px 15px rgba(0,0,0,.3);
+    
+}
+.E{
+    margin-left:15px;
+    font-family:"Roboto Condensed";
+}
+.E_c{
+    margin-left:15px;
+    font-family:"Roboto Condensed";
+}
