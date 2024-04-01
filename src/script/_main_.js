@@ -18,3 +18,18 @@ document.addEventListener("DOMContentLoaded", function() {
       }
     };
   });
+
+
+// Get the current page URL
+const currentPage = window.location.href;
+// Get all the links in the navigation
+const navLinks = document.querySelectorAll('#nav a');
+// Loop through each link to find the current page
+navLinks.forEach(link => {
+    if (link.href === currentPage) {
+        // If the link matches the current page, set the indicator position
+        const indicator = document.getElementById('indic');
+        const linkPosition = link.offsetLeft;
+        indicator.style.left = `calc(${linkPosition}px + 5%)`;
+    }
+});
