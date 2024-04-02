@@ -20,16 +20,27 @@ document.addEventListener("DOMContentLoaded", function() {
   });
 
 
-// Get the current page URL
 const currentPage = window.location.href;
-// Get all the links in the navigation
 const navLinks = document.querySelectorAll('#nav a');
-// Loop through each link to find the current page
 navLinks.forEach(link => {
     if (link.href === currentPage) {
-        // If the link matches the current page, set the indicator position
         const indicator = document.getElementById('indic');
         const linkPosition = link.offsetLeft;
         indicator.style.left = `calc(${linkPosition}px + 5%)`;
     }
 });
+
+
+var hamburgerButton = document.getElementById("hamburgerButton");
+var menuElement = document.getElementById("nav-menu");
+hamburgerButton.addEventListener("click", function() {
+  this.classList.toggle("is-active");
+  if (menuElement.classList.contains("nav-menu")) {
+    menuElement.classList.remove("nav-menu");
+    menuElement.classList.add("hamburger-menu");
+  } else {
+    menuElement.classList.remove("hamburger-menu");
+    menuElement.classList.add("nav-menu");
+  }
+});
+
