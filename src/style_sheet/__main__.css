@@ -1,10 +1,13 @@
 @import url(nav.css);
 @import url(footer.css);
 
+*{
+  box-sizing: border-box;
+}
 :root {
     --main-color: #ffffff;
     --blue-theme-color1: #f8f8ff;
-    --nav-height:90px;
+    --nav-height:100px;
     margin: 0;
     /* Define a variable named --main-color and set its value to red */
 }
@@ -15,10 +18,12 @@ body {
     top: 0;
     left: 0;
     height: 100%;
+    width: 100%;
     background-color: var(--main-color);
     margin: 0;
     padding: 0;
     overflow-x: hidden;
+    overflow-y: scroll;
 }
 
 .background-image {
