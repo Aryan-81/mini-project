@@ -1,170 +1,203 @@
-
-footer{
+footer {
     position: relative;
-    
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    height: fit-content;
+    background-color: rgb(2, 75, 170);
+    width: 100%;
+    padding: 0 2%;
+    overflow: hidden;
 }
 
-.main{
-    
-    background-color: rgb(2, 75, 170);
-    float : bottom;
-    display:flex;
-   height: 280px;
-    
+footer .ftr-ctr1 {
+    width: fit-content;
+    padding: 2% 0%;
+    transform: translateY(-50px);
 }
 
-.left{
-  
-    
-    padding-right: 20px;
-    padding-left: 15px;
+footer .college_name {
+    font-family: Bungee Hairline;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    display: inline-block;
 }
-.v{
-    margin-top: 20px;
-    margin-bottom: 20px;
-    border-right-color:rgba(255, 255, 255, 0.767) ;
-    border-right-width:1px;
-    border-right-style:solid;
-    height:235px;
+
+footer .college_address {
+    font-family: Bungee Hairline;
+    font-size: 13px;
+    font-weight: bold;
+    color: white;
+    line-height: 15px;
 }
-.right{
-    
+
+footer .v {
+    position: absolute;
+    top:50%;
+    transform: translateY(-50%);
+    border-right-color: rgba(255, 255, 255, 0.767);
+    border-right-width: 1px;
+    border-right-style: solid;
+    height: 235px;
+}
+
+footer .ftr-ctr2 {
+    width: fit-content;
+    display: flex;
+    padding: 0%;
+    justify-content: center;
+    align-items: center;
+}
+footer .map {
+    /* width: fit-content; */
+    min-width: 40vw;
+    position: inherit;
+    padding: 0%;
+    padding: 0 1%;
+    border-radius: 20px;
+
+}
+footer .ftr-ctr3 {
+    width: fit-content;
     background-color: rgb(2, 75, 170);
-    float : right;
     display: flex;
     flex-direction: column;
-  
-    margin-left: 57px;
-    
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 5vh;
+}
+.contact_us {
+    float: right;
+    height: fit-content;
+    font-family: Bungee Hairline;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    margin: 0%;
+    text-align: center;
+}
+.b {
+    border-bottom-color: white;
+    margin-top: 2px;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    width: 200px
+}
+footer .logos{
+    width: 100%;
+    margin-top: 5vh;
+    display: flex;
+    height: fit-content;
+    flex-direction: row;
+    justify-content: space-evenly;
+
 }
 
-
-.X{
-    
+.X {
     background-color: rgb(2, 75, 170);
-    width:26px;
+    width: 26px;
     align-items: left;
-    margin-bottom: 20px;
-    margin-left: 200px;
-   height:40px;
 }
-
-.X:hover{
-    width:30px;
+.X:hover {
+    width: 30px;
     transition-duration: 0.3s;
-    transition-timing-function:ease-in;
+    transition-timing-function: ease-in;
 
 }
-.insta:hover{
-    width:30px;
+
+.insta:hover {
+    width: 30px;
     transition-duration: 0.3s;
-    transition-timing-function:ease-in;
+    transition-timing-function: ease-in;
 }
-.gmail:hover{
-    width:30px;
+
+.gmail:hover {
+    width: 30px;
     transition-duration: 0.3s;
-    transition-timing-function:ease-in;
+    transition-timing-function: ease-in;
 }
-.linkedin:hover{
-    width:30px;
+
+.linkedin:hover {
+    width: 30px;
     transition-duration: 0.3s;
-    transition-timing-function:ease-in;
+    transition-timing-function: ease-in;
 }
-.X:active{
-   opacity: 0.2;
-}
-.insta:active{
+
+.X:active {
     opacity: 0.2;
 }
-.gmail:active{
+
+.insta:active {
     opacity: 0.2;
+}
+
+.gmail:active {
+    opacity: 0.2;
+
+}
+
+.linkedin:active {
+    opacity: 0.2;
+
+}
+
+.insta {
+
+    background-color: rgb(2, 75, 170);
+    height: 40px;
+    width: 26px;
+}
+
+.linkedin {
+    height: 40px;
+    width: 26px;
+    background-color: rgb(2, 75, 170);
+}
+
+.gmail {
+    width: 26px;
+    height: 40px;
+    background-color: rgb(2, 75, 170);
     
 }
-.linkedin:active{
-    opacity: 0.2;
-   
-}
-.insta{
-    
-    background-color: rgb(2, 75, 170);
-    height:40px;
-    width:26px;
-    margin-bottom: 20px;
-    margin-left: 20px;
-}
-.linkedin{
-    height:40px;
-    width:26px;
-    background-color: rgb(2, 75, 170);
-    margin-bottom: 20px;
-    margin-left: 20px;
-}
-.gmail{
-    width:26px;
-    height:40px;
-    background-color: rgb(2, 75, 170);
-    margin-bottom: 20px;
+
+@media only screen and (max-width: 700px) {
+    footer{
+        /* flex-direction: column; */
+        flex-wrap: wrap;
+        align-items: center;
+        align-content: center;
+        padding-bottom: 4vh;
+    }
+    footer .ftr-ctr1 {
+        transform: none;
+    }
+    footer .college_name{
+        line-height: 80%;
+    }
+    footer .ftr-ctr1 .logo{
+        height: 100px;
+        object-fit: cover; /* Ensure the image covers the entire container */
+        clip-path: inset(0);
+    }
+    footer .ftr-ctr3 {
+        margin-top: 0;
+    }
+ }
+
  
-    margin-left: 20px;
+@media only screen and (max-width: 525px){
+    footer{
+        flex-wrap: nowrap;
+        flex-direction: column;
+        padding: 0 2%;
+
+    }
 }
-
-
-.M{
-    margin-right:50px;
-    margin-bottom:20px;
+ 
+@media only screen and (max-width: 1200px){
+    footer .v{
+        display: none;
+    }
 }
-.map{
-   border-radius: 20px;
-   margin-top:40px;
-   
-   margin-left:90px;  
-   margin-right:10px;
-  
-}
-.cu{
-    
-    width:10px;
-}
-.b{
-    border-bottom-color:white ;
-    margin-top:2px;
-    border-bottom-width:1px;
-    border-bottom-style:solid;
-    margin-bottom:20px;
-    margin-left:192px;
-    width:200px
-}
-.contact_us{
-    font-family : Bungee Hairline;
-   color: white; 
-   font-weight:bold;
-   font-size: 20px;
-   text-align: center;
-   padding-top:140px;
-     padding-left:190px;
-     margin-bottom:-2px;
-
-}
-
-
-
-.college_name{
-   font-family : Bungee Hairline;
-   color: white;
-   font-weight:bold;
-   font-size: 20px;
-   display: inline-block;
-}
-.college_address{
-    font-family : Bungee Hairline;
-font-size: 13px;
-font-weight:bold;
-   color: white;
-  line-height: 15px;
-   
-}
-
-/* .college_name{
-
-
-} */

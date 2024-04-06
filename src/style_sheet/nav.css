@@ -2,26 +2,27 @@
 nav {
     position: fixed;
     display: flex;
+    top:0;
     justify-content: space-between;
     align-items: center;
     margin: 0;
     flex-wrap: nowrap;
     flex-direction: row;
-    width: 100vw;
+    width: 100%;
     height: var(--nav-height);
     background-color: var(--blue-theme-color1);
     z-index: 9999;
     transition: 0.5s;
 }
 nav .logo {
-    height: 100%;
-    width: 90px;
+    height: 90%;
+    aspect-ratio: 1;
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
     text-align: center;
     background-color: var(--main-color) !important;
-    margin-left: 2%;
+    margin: 5% 0 5% 2%;
 }
 nav .logo a {
     padding: 0;
