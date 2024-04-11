@@ -11,20 +11,27 @@ footer {
 }
 
 footer .ftr-ctr1 {
+    display: block;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
     width: fit-content;
     padding: 2% 0%;
     transform: translateY(-50px);
 }
 
 footer .college_name {
+    text-align: center;
     font-family: Bungee Hairline;
     color: white;
     font-weight: bold;
+    line-height: 150%;
     font-size: 20px;
     display: inline-block;
 }
 
 footer .college_address {
+    text-align: center;
     font-family: Bungee Hairline;
     font-size: 13px;
     font-weight: bold;
@@ -53,10 +60,8 @@ footer .map {
     /* width: fit-content; */
     min-width: 40vw;
     position: inherit;
-    padding: 0%;
-    padding: 0 1%;
+    padding: 0 1% 0 1%;
     border-radius: 20px;
-
 }
 footer .ftr-ctr3 {
     width: fit-content;
@@ -168,9 +173,11 @@ footer .logos{
         flex-wrap: wrap;
         align-items: center;
         align-content: center;
+        justify-content: space-evenly;
         padding-bottom: 4vh;
     }
     footer .ftr-ctr1 {
+        align-items: center;
         transform: none;
     }
     footer .college_name{
@@ -188,16 +195,25 @@ footer .logos{
 
  
 @media only screen and (max-width: 525px){
+    footer .ftr-ctr1 {
+        align-items: center;
+    }
     footer{
         flex-wrap: nowrap;
         flex-direction: column;
         padding: 0 2%;
 
     }
+    footer .ftr-ctr2 {
+        padding: 3vh 0;
+    }
 }
  
 @media only screen and (max-width: 1200px){
     footer .v{
         display: none;
+    }
+    footer .ftr-ctr1 {
+        display: flex;
     }
 }
