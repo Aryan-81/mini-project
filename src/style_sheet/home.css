@@ -1,7 +1,6 @@
 .img{
     margin-top:100px;
-    background-image: url(https://i1.rgstatic.net/ii/profile.image/559063169593344-1510302454956_Q512/Yogesh-Nimdeo.jpg);
-    
+    background-image: url("src\style_sheet\mainpic.png");
 }
 
 .bluebox{
@@ -77,6 +76,7 @@ color:white;
     margin-left:30px;
     font-family:"Roboto";
 }
+
 
 
 .ctr-1 {

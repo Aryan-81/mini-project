@@ -1,0 +1,39 @@
+.Heading{
+font-family:  Bungee Hairline;
+font-size: 25px;
+font-weight: bolder;
+margin-left: 550px;
+color:white;
+margin-bottom:-1px;
+padding-top:20px;
+}
+.Heading{
+font-family:  Bungee Hairline;
+font-size: 25px;
+margin-left: 550px;
+color:white;
+margin-bottom:-1px;
+padding-top:20px;
+}
+.H{
+    background:linear-gradient(rgb(2, 75, 170),rgba(255, 255, 255, 0.493));
+    margin-top: 100px;
+    height:100px;
+    
+}
+
+.line{
+    border-color:white;
+    border-width: 2px;
+    border-style: solid;
+  
+    margin-bottom:50px;
+}
+
+.publ{
+    margin-left:120px;
+    margin-right:60px;
+}
+.cont{
+font-family: "Titillium Web", sans-serif;
+}
