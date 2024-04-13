@@ -1,7 +1,7 @@
 @import url(nav.css);
 @import url(footer.css);
 
-*{
+* {
   box-sizing: border-box;
 }
 :root {
