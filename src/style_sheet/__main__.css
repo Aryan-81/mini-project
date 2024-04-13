@@ -7,7 +7,7 @@
 :root {
     --main-color: #ffffff;
     --blue-theme-color1: #ffffff;
-    --nav-height:100px;
+    --nav-height:70px;
     margin: 0;
     /* Define a variable named --main-color and set its value to red */
 }
@@ -25,7 +25,7 @@ body {
     overflow-x: hidden;
     overflow-y: scroll;
 }
-
+/* 
 .background-image {
   position: fixed;
   width: 100%;
@@ -43,7 +43,7 @@ body {
   height: 100%;
   overflow: hidden;
   position: fixed; 
-  grid-template-columns: repeat(12, 1fr); /* Adjust the number of columns as needed */
+  grid-template-columns: repeat(12, 1fr);
   grid-template-rows: repeat(5, 1fr); 
   z-index: -998;
 }
@@ -51,9 +51,8 @@ body {
 {
   margin: 0.15vh 0.15vw;
   background: linear-gradient(var(--main-color), #f5ffff);
-  /* background: linear-gradient(var(--main-color) 30% , #0c0c0c 100%); */
   background-size: cover;
-}
+} */
 
 ::-webkit-scrollbar {
     width: 6px;

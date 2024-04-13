@@ -1,5 +1,5 @@
 .img{
-    margin-top:100px;
+    margin-top:var(--nav-height);
     background-image: url(https://i1.rgstatic.net/ii/profile.image/559063169593344-1510302454956_Q512/Yogesh-Nimdeo.jpg);
     
 }
