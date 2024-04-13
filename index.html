@@ -8,41 +8,57 @@
     <link rel="stylesheet" href="src/style_sheet/__main__.css">
     <link rel="stylesheet" href="src/style_sheet/home.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bungee+Hairline&display=swap" rel="stylesheet">
-
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bungee+Hairline&display=swap" rel="stylesheet">
     <script src="src/script/_main_.js" defer></script>
-
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Teko:wght@300..700&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Satisfy&family=Teko:wght@300..700&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Satisfy&family=Teko:wght@300..700&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Teko:wght@300..700&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Satisfy&family=Teko:wght@300..700&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Satisfy&family=Teko:wght@300..700&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <nav id="nav">
         <div class="logo" style="background-image: url('src/asset/Indian_Institute_of_Technology__Jammu_Logo.svg');"><a href="#"></a></div>
         <div id="nav-menu" class="nav-menu">
-            <a href="index.html">Home</a>
-            <a href="about.html">About</a>
-            <a href="student.html">Students</a>
-            <a href="contact.html">Contact</a>
-            <a href="#">Publications</a>
-            <div id="indic"></div>
-        </div>    
+            <div class="obj"><a href="index.html">Home</a></div>
+            <div class="obj"><a href="about.html">About</a></div>
+            <div class="obj"><a href="activity.html">Activities</a></div>
+            <div class="obj drop">
+                <a href="research.html">Research<div><div id="arrow"></div></div></a>
+                <ul>
+                    <li><a href="#">Members</a></li>
+                    <li><a href="facilities.html">Facilities</a></li>
+                </ul>
+            </div>
+            <div class="obj drop">
+                <a href="members.html">Members<div><div id="arrow"></div></div></a>
+                <ul>
+                    <li><a href="#">UG</a></li>
+                    <li><a href="#">PG</a></li>
+                    <li><a href="#">PHD</a></li>
+                    <li><a href="#">Intern</a></li>
+                </ul>
+            </div>
+            <div class="obj"><a href="news.html">news</a></div>
+            <div class="obj"><a href="publication.html">Publications</a></div>
+            <div class="obj"><a href="contact.html">Contact</a></div>
+            <div id="indic"></div>  
+            
+        </div> 
+         
         <button class="hamburger hamburger--elastic" id="hamburgerButton" type="button">
             <span class="hamburger-box">
               <span class="hamburger-inner"></span>
             </span>
-        </button>   
+        </button>  
     </nav>
 
     
@@ -50,7 +66,7 @@
     <div class="bluebox">
       
         <div class="heading">
-            <img class="bond"  src="picsvg_download.svg" width="65px" >
+            <img class="bond"  src="src/asset/picsvg_download.svg" width="65px" >
             <h1 class="nname">Yogesh Madhukarrao Nimdeo</h1>
             <h2 class ="body ">Hod of Chemical Engineering Department</h2>
             <div class ="line1"></div>

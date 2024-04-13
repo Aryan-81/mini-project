@@ -3,26 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="src/style_sheet/student.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bungee+Hairline&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./src/style_sheet/news.css">
-    <script src="src/script/_main_.js" defer></script>
-
     <title>Document</title>
+    <script src="src/script/_main_.js" defer></script>
+    <link rel="stylesheet" href="src/style_sheet/__main__.css">
 </head>
 <body>
     <nav id="nav">
         <div class="logo" style="background-image: url('src/asset/Indian_Institute_of_Technology__Jammu_Logo.svg');"><a href="#"></a></div>
         <div id="nav-menu" class="nav-menu">
-            <a href="index.html">Home</a>
-            <a href="about.html">About</a>
-            <a href="student.html">Students</a>
-            <a href="contact.html">Contact</a>
-            <a href="#">Publications</a>
-            <div id="indic"></div>
-        </div>    
+            <div class="obj"><a href="index.html">Home</a></div>
+            <div class="obj"><a href="about.html">About</a></div>
+            <div class="obj"><a href="activity.html">Activities</a></div>
+            <div class="obj drop">
+                <a href="research.html">Research<div><div id="arrow"></div></div></a>
+                <ul>
+                    <li><a href="#">Members</a></li>
+                    <li><a href="facilities.html">Facilities</a></li>
+                </ul>
+            </div>
+            <div class="obj drop">
+                <a href="members.html">Members<div><div id="arrow"></div></div></a>
+                <ul>
+                    <li><a href="#">UG</a></li>
+                    <li><a href="#">PG</a></li>
+                    <li><a href="#">PHD</a></li>
+                    <li><a href="#">Intern</a></li>
+                </ul>
+            </div>
+            <div class="obj"><a href="news.html">news</a></div>
+            <div class="obj"><a href="publication.html">Publications</a></div>
+            <div class="obj"><a href="contact.html">Contact</a></div>
+            <div id="indic"></div>  
+            
+        </div> 
+         
         <button class="hamburger hamburger--elastic" id="hamburgerButton" type="button">
             <span class="hamburger-box">
               <span class="hamburger-inner"></span>
@@ -30,42 +44,14 @@
         </button>  
     </nav>
 
-    <div class="container">
-        <h1 class="heading">News</h1>
+    <div class="head">
+        <div id="head-background" style="background-image: url(src/asset/download.jpeg);"></div>
+        <h1>News</h1>
     </div>
-    <div class="news one">
-    <div id="slideshow">
-        <div class="slide-wrapper">
- 
-            <!-- Define each of the slides
-         and write the content -->
- 
-            <div class="slide">
-                <h1 class="slide-number">
-                    GeeksforGeeks
-                </h1>
-            </div>
-            <div class="slide">
-                <h1 class="slide-number">
-                    A computer science portal
-                </h1>
-            </div>
-            <div class="slide">
-                <h1 class="slide-number">
-                    This is an example of
-                </h1>
-            </div>
-            <div class="slide">
-                <h1 class="slide-number">
-                    Slideshow with HTML and CSS only
-                </h1>
-            </div>
-        </div>
-    </div>
-    <div class="about description">HELLO</div>
-</div>
+    <section class="content">
 
-  
+    </section>
+
     <footer>
         <div class="ftr-ctr1">
             <img class="logo" src="src/asset/1709208978519.jpeg" width="200px">
@@ -99,6 +85,6 @@
             </div>
         </div>
     </footer>
-<script src="./src/script/news.js"></script>
+    
 </body>
 </html>
