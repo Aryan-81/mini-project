@@ -1,0 +1,7 @@
+@import url('./__main__.css');
+.container{
+    
+    margin-top: var(--nav-height);
+    padding-bottom: 100px;
+    position: relative;
+}
