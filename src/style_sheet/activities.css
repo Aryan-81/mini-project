@@ -21,8 +21,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 55vh;
-  transform: rotate(-90deg) translate3d(0,-55vh,0);
+  width: 56vh;
+  transform: rotate(-90deg) translate3d(0,-56vh,0);
   transform-origin: right top;
   overflow-y: auto;
   overflow-x: hidden;

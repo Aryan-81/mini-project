@@ -1,4 +1,6 @@
-// script.js
+
+const gallery_num = 10;
+const img_count = [10,9,9,9,9,9,9,9,9,9];
 
 // Function to create the grid with cards
 function createGrid() {
@@ -9,7 +11,7 @@ function createGrid() {
         gridRow.className = 'Grid';
 
   
-        for (var j = 0; j < 9; j++) {
+        for (var j = 0; j < gallery_num; j++) {
             var id =  j + 1;
 
             var card = document.createElement('div');
@@ -67,7 +69,7 @@ function createGrid() {
 function createGallerySections() {
     var mainContainer = document.getElementById('gallerysubsection');
 
-    for (var i = 1; i <= 9; i++) {
+    for (var i = 1; i <= gallery_num; i++) {
         var gallerySection = document.createElement('section');
         gallerySection.className = 'Gallery';
         gallerySection.id = 'gallery-' + i;
@@ -103,11 +105,11 @@ function createGallerySections() {
         var galleryImageSet = document.createElement('div');
         galleryImageSet.className = 'Gallery-images';
 
-        for (var k = 1; k <= 9; k++) {
+        for (var k = 1; k <= img_count[i-1]; k++) {
             var galleryImage = document.createElement('div');                
             galleryImage.className = 'Gallery-image';
             galleryImageSet.appendChild(galleryImage);
-        }
+        } 
 
         gallerySection.appendChild(galleryImageSet);
         

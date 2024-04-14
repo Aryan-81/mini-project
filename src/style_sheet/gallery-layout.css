@@ -16,7 +16,7 @@
   .Card {
     position: relative;
     flex: 0 1 20rem;
-    background-color: #fff;
+    background-color: #d9fcff;
     padding-bottom: 5rem;
     margin: 10px;
     transition: background-color 0.2s cubic-bezier(0.5, 0.3, 0.8, 0.06);
@@ -395,7 +395,7 @@
     opacity: 0;
     transform: scale(1.2);
     transition: none;
-    padding: 10vh 0;
+    padding: 0;
     overflow-y: scroll;
     -ms-overflow-style: none;  /* IE and Edge */
     scrollbar-width: none;  /* Firefox */
@@ -415,8 +415,8 @@
     right: 0;
     bottom: 0;
     left: 0;
-    z-index: 100;
-    background: #231f1f;
+    z-index: 101;
+    background: #fff7dd;
     transform: scale(1);
     opacity: 1;
     transition: all 0.5s cubic-bezier(0.7, 0, 0.78, 1) 0.1s;
@@ -424,12 +424,14 @@
   
   
   .Gallery-header {
-    position: absolute;
+    position: sticky;
     left: 0;
     right: 0;
     top: 0;
-    background-color: #111111;
-    padding-bottom: 8vh;
+    background-color: #a8a8a8;
+    height: 4em;
+    width: 100%;
+    z-index: 102;
   }
   
   .Gallery-close {
@@ -438,6 +440,7 @@
     right: 1rem;
     top:0.6rem;
     font-size: 3rem;
+    font-weight: bolder;
     opacity: 0.5;
     cursor: pointer;
   }
@@ -482,6 +485,7 @@
     flex-wrap: wrap;
     width: 100%;
     margin: 0 auto;
+    padding: 0 2%;
     justify-content: space-evenly;
     margin-bottom: 1rem;
     transition: all 0.2s cubic-bezier(0.7, 0, 0.78, 1) 0.33s;
