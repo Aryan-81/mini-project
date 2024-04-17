@@ -114,12 +114,12 @@ font-family:"Roboto Condensed";
     border-width: 2px;
     border-color: black;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    height: 100px;
+    height: 385px;
     transition-duration: 0.3s;
     transition-timing-function:ease-in-out;
 }
 .goals:hover{
-    height:101px;
+    height:386px;
     
     box-shadow: 0 10px 15px rgba(0,0,0,.3);
 }
@@ -131,6 +131,11 @@ font-family:"Roboto Condensed";
     margin-left:15px;
     font-family:"Roboto Condensed";
 }
+.RI{
+    margin-left:15px;
+    font-family:"Roboto Condensed";
+}
+
 .education_qualifications{
     margin-left:50px;
     margin-right:20px;
