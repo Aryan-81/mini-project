@@ -33,13 +33,14 @@
     align-items: center;
 
 }
-
+/* change the maxwidth to 0.33fr from 1fr also added justify content as center */
 .container .box-container{
     padding: 0 5%;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(270px, 0.33fr));  
     gap:15px;
     position: relative;
+    justify-content: space-around;
 }
 
 .container .box-container .box{
