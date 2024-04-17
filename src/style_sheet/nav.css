@@ -41,8 +41,7 @@ nav .nav-menu .obj{
     position: relative;
     display: table-cell;
     width: 33.333%;
-    margin: .5em 1em;
-    padding: .5em .8em;
+    padding: .5em .8em .0em .8em;
 }
 nav a {
     text-decoration: none;
@@ -111,7 +110,7 @@ nav .obj:nth-child(8) > a:after { background-color: rgb(255, 206, 120);}
 nav #indic {
     position: absolute;
     left: 2.78%;
-    bottom: 30px;
+    bottom: 22px;
     width: 30px;
     height: 3px;
     background-color: #424242;
