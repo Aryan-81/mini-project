@@ -74,6 +74,11 @@ body {
     background-image: linear-gradient(180deg, #5a456796 0%, #44625d95 99%);
   }
 
+  @media only screen and (max-width: 768px) {
+    .head h1 {
+      font-size: 16vw;
+    }
+ }
 
 @keyframes reveal {
   80% {
