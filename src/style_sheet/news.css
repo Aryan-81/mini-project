@@ -45,6 +45,7 @@
     display: flex;
     flex-direction: column;
     margin: 2vh auto;
+    padding: 15px;
 
 }
 
@@ -55,3 +56,34 @@ hr {
     width: 90%;
     margin: 0 auto;
 }
+.mySlides
+{
+    width: 600px;
+    height: 400px;
+    
+}
+.slideshow
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@media screen and (max-width: 700px) {
+    .mySlides
+    {
+        width: 400px;
+        height: 300px;
+    }
+  }
+  @media screen and (max-width: 495px) {
+    .mySlides
+    {
+        width: 350px;
+        height: 285px;
+    }
+  }
+  .desc
+  {
+    padding-top: 20px;
+    font-size: large;
+  }
