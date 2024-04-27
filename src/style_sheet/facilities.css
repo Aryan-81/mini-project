@@ -1,6 +1,7 @@
 .lab-eq{
     width: 90%;
-    margin: 0 auto;
+    background-color: #fff;
+    margin: 4vh auto;
 }
 
 .grid-facilities{
@@ -13,11 +14,15 @@
     align-items: center;
     flex-wrap: nowrap;
     flex-direction: column;
-    background-color: bisque;
+    box-shadow: 0 5px 10px #00000072;
+    background-color: #ffffff;
     border-radius: 0.5em;
     max-width: 100%;
     padding: 2% 3% 1% 3%;
     overflow: hidden;
+}
+.eq-card:hover{
+    background-color: #ececec;
 }
 
 .img-container {
@@ -34,7 +39,7 @@
     top: 0;
     height: 100%;
     width: 100%;
-    background-size: cover;
+    background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
 }

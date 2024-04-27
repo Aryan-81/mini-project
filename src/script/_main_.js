@@ -1,7 +1,8 @@
 document.addEventListener("DOMContentLoaded", function () {
   let prevScrollPos = window.pageYOffset;
   const nav = document.getElementById("nav");
-  const navbarHeight = parseInt(getComputedStyle(document.documentElement).getPropertyValue('--nav-height'));
+  // const navbarHeight = parseInt(getComputedStyle(document.documentElement).getPropertyValue('--nav-height'));
+  const navbarHeight = 100;
   const scrollThreshold = 50; // Adjust as needed
 
   window.onscroll = function () {

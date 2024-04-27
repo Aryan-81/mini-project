@@ -1,6 +1,7 @@
 
-const gallery_num = 10;
+const gallery_num = 3;
 const img_count = [10,9,9,9,9,9,9,9,9,9];
+const events_name = ["CPCB","Teacher's Day","Visits"]
 
 // Function to create the grid with cards
 function createGrid() {
@@ -33,17 +34,17 @@ function createGrid() {
   
             var cardImage = document.createElement('div');
             cardImage.className = 'Card-image';
-            cardImage.style.backgroundImage = 'url(https://robohash.org/' + id + ')';
+            cardImage.style.backgroundImage = 'url(src/asset/highlights/0' + id + '.JPG)';
             cardThumb.appendChild(cardImage);
   
             var cardTitle = document.createElement('div');
             cardTitle.className = 'Card-title';
-            cardTitle.innerHTML = '<span>Super interesting card</span>';
+            cardTitle.innerHTML = '<span>'+events_name[j]+'</span>';
             card.appendChild(cardTitle);
   
             var cardExplore = document.createElement('div');
             cardExplore.className = 'Card-explore';
-            cardExplore.innerHTML = '<span>Explore 50 more</span>';
+            cardExplore.innerHTML = '<span>Explore More Pictures</span>';
             card.appendChild(cardExplore);
   
             var cardButton = document.createElement('button');
@@ -93,7 +94,7 @@ function createGallerySections() {
         // Gallery image (primary)
         var galleryImagePrimary = document.createElement('div');
         galleryImagePrimary.className = 'Gallery-image--primary';
-        galleryImagePrimary.style.backgroundImage = 'url(https://robohash.org/' + i + ')';
+        galleryImagePrimary.style.backgroundImage = 'url(src/asset/highlights/0' + i + '.JPG)';
         primaryImage.appendChild(galleryImagePrimary);
         // Gallery description
         var description = document.createElement('div');

@@ -2,7 +2,7 @@
 #gallerysubsection{
     overflow: hidden;
     width: 80%;
-    margin: 0 auto;
+    margin: 3% auto;
 
   }
   .Grid {
@@ -16,7 +16,7 @@
   .Card {
     position: relative;
     flex: 0 1 20rem;
-    background-color: #d9fcff;
+    background-color: #efecdb;
     padding-bottom: 5rem;
     margin: 10px;
     transition: background-color 0.2s cubic-bezier(0.5, 0.3, 0.8, 0.06);
@@ -66,6 +66,7 @@
   .Card-image {
     position: relative;
     background-size: auto 100%;
+    background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     background-color: #607d8b;
@@ -499,7 +500,7 @@
     height: 9.5rem;
     margin-bottom: 2%;
     transition: all 0.2s cubic-bezier(0.42, 0, 0.58, 1);
-    background: #aebfc7;
+    background: #efecdb;
     background-size: auto 100%;
     background-position: center;
     background-repeat: no-repeat;

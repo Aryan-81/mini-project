@@ -1,12 +1,10 @@
 
 .highligts ::-webkit-scrollbar {
-  width: 1px;
-  height: 1px;
+  display: none;
 }
 
 .highligts ::-webkit-scrollbar-button {
-  width: 1px;
-  height: 1px;
+  display: none;
 }
 .highligts {
   overflow: hidden;
@@ -107,7 +105,7 @@
   max-height: 50vh;
   transition: .5s;
   vertical-align: top;
-  filter: saturate(40%) sepia(30%) hue-rotate(5deg);
+  /* filter: saturate(40%) sepia(30%) hue-rotate(5deg); */
 }
 .highligts a:hover img {
   filter: none;

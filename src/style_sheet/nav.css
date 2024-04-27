@@ -1,6 +1,6 @@
 @import url(hamburger.css);
 nav {
-    position: fixed;
+    position: sticky;
     display: flex;
     top:0;
     justify-content: space-between;
