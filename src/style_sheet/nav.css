@@ -10,7 +10,7 @@ nav {
     flex-direction: row;
     width: 100%;
     height: var(--nav-height);
-    background-color: var(--blue-theme-color1);
+    background-color: #20338b;
     z-index: 100;
     transition: 0.5s;
 }
@@ -47,7 +47,7 @@ nav a {
     text-decoration: none;
     text-align: center;
     font-size: 1em;
-    color: #000000;
+    color: #ffffff;
     /* text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5); */
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: bold;
