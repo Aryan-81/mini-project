@@ -229,7 +229,7 @@ body {
   flex: 1 1 auto;
   display: flex;
   background-color: white;
-  box-shadow: 1px 3px 3px rgba(0, 10, 20, 0.06);
+  box-shadow: 0 5px 10px #00000072;
   flex-wrap: wrap;
 }
 .card img {
@@ -319,7 +319,7 @@ a:hover {
     flex: 1 1 auto;
     display: flex;
     background-color: white;
-    box-shadow: 1px 3px 3px rgba(0, 10, 20, 0.06);
+    box-shadow: 0 5px 10px #00000072;
   }
   .card img {
     max-width: 100%;
