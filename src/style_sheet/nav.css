@@ -21,7 +21,7 @@ nav .logo {
     background-position: center;
     background-size: contain;
     text-align: center;
-    background-color: var(--main-color) !important;
+    background-color: #20338b !important;
     margin: 5% 0 5% 2%;
 }
 nav .logo a {
@@ -77,31 +77,31 @@ nav .obj > a:after {
     width: 4px;
     height: 4px;
 }
-nav .obj:nth-child(1) > a:before { background-color: yellow;}
-nav .obj:nth-child(1) > a:after { background-color: red;}
+nav .obj:nth-child(1) > a:before { background-color: #ffff00;}
+nav .obj:nth-child(1) > a:after { background-color: #ff0000;}
 
 nav .obj:nth-child(2) > a:before {background-color: #00e2ff;}
 nav .obj:nth-child(2) > a:after {background-color: #89ff00;}
 
-nav .obj:nth-child(3) > a:before {background-color: purple;}
-nav .obj:nth-child(3) > a:after {background-color: palevioletred;}
+nav .obj:nth-child(3) > a:before {background-color: #800080;}
+nav .obj:nth-child(3) > a:after {background-color: #d87093;}
 
-nav .obj:nth-child(4) > a:before {background-color: rgb(0, 26, 153);}
-nav .obj:nth-child(4) > a:after {background-color: rgb(9, 151, 44);}
+nav .obj:nth-child(4) > a:before {background-color: #001a99;}
+nav .obj:nth-child(4) > a:after {background-color: #09972c;}
 
-nav .obj:nth-child(5) > a:before {background-color: rgb(255, 162, 0);}
-nav .obj:nth-child(5) > a:after {background-color: rgb(255, 206, 120);}
+nav .obj:nth-child(5) > a:before {background-color: #ffa200;}
+nav .obj:nth-child(5) > a:after {background-color: #ffce78;}
 
 nav .obj:nth-child(6) > a:before {background-color: #fa50cf;}
-nav .obj:nth-child(6) > a:after {background-color: rgb(133, 255, 220);}
+nav .obj:nth-child(6) > a:after {background-color: #85ffdc;}
 
-nav .obj:nth-child(7) > a:before { background-color: rgb(227, 49, 90);}
-nav .obj:nth-child(7) > a:after { background-color: rgb(212, 255, 127);}
+nav .obj:nth-child(7) > a:before { background-color: #e3315a;}
+nav .obj:nth-child(7) > a:after { background-color: #d4ff7f;}
 
-nav .obj:nth-child(8) > a:before { background-color: rgb(108, 255, 63);}
-nav .obj:nth-child(8) > a:after { background-color: rgb(255, 206, 120);}
+nav .obj:nth-child(8) > a:before { background-color: #6cff3f;}
+nav .obj:nth-child(8) > a:after { background-color: #ffce78;}
 .nav-menu a:hover {
-    color: #585858;
+    color: #bcbcbc;
 }
 .nav-menu .obj:hover a:before,
 .nav-menu .obj:hover a:after {
@@ -113,52 +113,52 @@ nav #indic {
     bottom: 22px;
     width: 30px;
     height: 3px;
-    background-color: #424242;
+    background-color: #b7b7b7;
     border-radius: 5px;
     transition: 0.2s ease ;
 }
 nav .obj:nth-child(1):hover~#indic {
     width: 38px;
     left: 2.13% !important; 
-    background: linear-gradient(130deg, yellow, red);
+    background: linear-gradient(130deg, #ffff00, #ff0000);
 }
 nav .obj:nth-child(2):hover~#indic {
     width: 38px;
     left: 12.3% !important;
-    background: linear-gradient(130deg, #00e2ff, #89ff00);
+    background: linear-gradient(130deg, #00e1ff, #89ff00);
 }
 nav .obj:nth-child(3):hover~#indic {
     width: 40px;
     left: 24.2% !important;
-    background: linear-gradient(130deg, purple, palevioletred);
+    background: linear-gradient(130deg, #800080, #d87093);
 }
 nav .obj:nth-child(4):hover~#indic {
     width: 40px;
     left: 38% !important;
-    background: linear-gradient(130deg, rgb(0, 26, 153), rgb(9, 151, 44));
+    background: linear-gradient(130deg, #001a99, #09972c);
 }
 nav .obj:nth-child(5):hover~#indic {
     width: 40px;
     left: 51.84% !important;
-    background: linear-gradient(130deg, rgb(255, 162, 0), rgb(255, 206, 120));
+    background: linear-gradient(130deg, #ffa200, #ffce78);
 }
 
 nav .obj:nth-child(6):hover~#indic {
     width: 38px;
     left: 63.4% !important;
-    background: linear-gradient(130deg, #fa50cf, rgb(133, 255, 220));
+    background: linear-gradient(130deg, #fa50cf, #85ffdc);
 }
 
 nav .obj:nth-child(7):hover~#indic {
     width: 50px;
     left: 75.9% !important;
-    background: linear-gradient(130deg, rgb(227, 49, 90), rgb(212, 255, 127));
+    background: linear-gradient(130deg, #e3315a, #d4ff7f);
 }
 
 nav .obj:nth-child(8):hover~#indic {
     width: 40px;
     left: 91.2% !important;
-    background: linear-gradient(130deg, rgb(108, 255, 63), rgb(255, 206, 120));
+    background: linear-gradient(130deg, #6cff3f, #ffce78);
 }
 
 nav #arrow:after,
@@ -169,7 +169,7 @@ nav #arrow:before{
     right:4px;
     width: 5px;
     height: 1.5px;
-    background-color: #000000;
+    background-color: #ffffff;
     transition: 0.2s ease transform;
 }
 nav #arrow:after{
@@ -180,11 +180,11 @@ nav #arrow:before{
 }
 nav .obj:hover #arrow:after {
     transform: rotate(-45deg);
-    background: #424242;
+    background: #bcbcbc;
 }
 nav .obj:hover #arrow:before {
     transform: translateX(2.4px)rotate(45deg);
-    background: #424242;
+    background: #bcbcbc;
 }
 
 nav .drop ul {
@@ -200,10 +200,10 @@ nav .drop ul {
     overflow: hidden;
 }
 nav .drop:nth-child(5) ul{
-    background-color: rgb(255, 248, 237) ;
+    background-color: #20338b ;
 }
 nav .drop:nth-child(4) ul{
-    background-color: rgb(237, 254, 242) ;
+    background-color: #20338b ;
 }
 .drop li {
     height: 0;
@@ -212,7 +212,7 @@ nav .drop:nth-child(4) ul{
     transition: all 500ms;
 }
 .drop ul li:nth-child(even) {
-    background-color: hsl(0, 0%, 98%); 
+    background-color: rgb(39, 57, 142); 
 }
 .obj .drop li {
     transition-delay: 300ms;
@@ -224,8 +224,8 @@ nav .drop:nth-child(4) ul{
     border-radius: 0 0 5px 5px;
 }
 .drop li:hover{
-    background-color: #d2d2d2;
-    color: #666;
+    background-color: #3939bf;
+    color: #a1a1a1;
 }
 .drop li:first-child a:hover::before {
     border-bottom-color: #EEE;
@@ -234,7 +234,6 @@ nav .drop:nth-child(4) ul{
     height: fit-content;
     padding-bottom: 5px;
 }
-
 .drop:hover li:first-child {
     padding-top: 5px;
 }
