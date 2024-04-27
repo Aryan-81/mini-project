@@ -35,5 +35,5 @@
 }
 
 .container ul li:nth-child(even) {
-    background-color: rgba(229, 238, 243, 0.845);
+    background-color: #e5eef3d7;
 }

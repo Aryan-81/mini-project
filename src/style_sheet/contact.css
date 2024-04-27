@@ -1,14 +1,17 @@
 @import url(__main__.css);
 
+::-webkit-scrollbar {
+    display: none;
+}
 
 .contact-form-ctr{
-    margin-top: 100px;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     align-content: center;
     align-items: center;
     flex-wrap: wrap;
+    max-height: 90%;
 }
 svg {
     height: 23rem;
@@ -98,6 +101,7 @@ form .title {
 form .form-control {
     background-color: #f2f6f8;
     border-radius: 2rem;
+    width: 90%;
     border: none;
     box-shadow: 0px 7px 5px rgba(0, 0, 0, 0.11);
 }
@@ -116,6 +120,7 @@ form .form-control:focus {
 form .message .form-control {
     padding: 0.5rem 1.8rem;
 }
+
 
 form ::placeholder {
     font-family: "Quicksand", sans-serif;

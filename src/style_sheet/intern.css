@@ -1,0 +1,50 @@
+@import url(__main__.css);
+
+*{
+    font-family: 'Poppins', sans-serif;
+    margin:0; padding:0;
+    box-sizing: border-box;
+    outline: none; border:none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: .2s linear;
+}
+
+.container{
+    width: 80%;
+    margin: 5vh auto;
+}
+.container > h2{
+    text-align: center;
+    margin: 2vh auto;
+    padding-top: 30px;
+    padding-bottom: 15px;
+    color: black;
+    text-shadow: 0 5px 10px rgba(0,0,0,.2);
+    font-size: 50px;
+    
+}
+.description ul {
+    list-style-type: none;
+    padding-left: 0;
+    margin-top: 1%;
+    margin-left: 2% ;
+}
+
+.description ul li { 
+    font-family: "Titillium Web", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 1.2em;
+    padding-left: 1em;
+    text-indent: -1em;
+}
+
+.description ul li::before {
+    content: '• ';
+    color: black;
+    padding-right: 0.5em;
+}
+.description ul:nth-child(even) {
+    background-color: #e5eef3d7;
+}
