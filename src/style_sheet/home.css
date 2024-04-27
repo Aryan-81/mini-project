@@ -1,113 +1,151 @@
-.img{
-    margin-top:var(--nav-height);
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+.img {
     background-image: url('../asset/main.JPG');
     background-size: cover;
     background-position: center;
-    
+    height: 100%;
+    width: 100%;
 }
 
-.bluebox{
-    background-color: rgb(2, 75, 170,0.89) ;
-    height:800px;
-    width:480px;
+.bluebox {
+    background-color: rgba(2, 75, 170, 0.701);
+    height: 100%;
+    width: 37%;
     transition-duration: 0.45s;
-    transition-timing-function:ease-in-out;
-   
-}
-.bluebox:hover{
-    background-color: rgb(2, 75, 170,0.98) ;
-    width:500px;
-
-   
-}
-.bond{
-   margin-bottom:-165px;
-   margin-left:20px;
-   margin-top:10px;
-   transition-duration: 0.2s;
-   transition-timing-function:ease-in-out;
-}
-.bond:hover{
-  width:70px;
- 
-}
-
-.nname{
-    padding-top:130px;
-    margin-left:30px;
-    font-family:"Teko",sans-serif;
-    font-size: 45px;;
-color:white;
+    transition-timing-function: ease-in-out;
 
 }
-.email{
-    color:white;
-    margin-left:30px;
-    margin-bottom:-20px;
-    font-family:"Teko",sans-serif;
+.bluebox:hover {
+    background-color: rgba(13, 82, 172, 0.933);
+    width: 38%;
+}
+.bond {
+    margin-bottom: -165px;
+    margin-left: 20px;
+    margin-top: 10px;
+    transition-duration: 0.2s;
+    transition-timing-function: ease-in-out;
+}
+
+.bond:hover {
+    width: 70px;
 
 }
 
-.body{
-    color:white;
-    margin-left:30px;
-    font-family:"Satisfy";
-}
-.line1{
-    border-color:white;
+.line{
+    border-color: white;
     border-width: thin;
-    border-style:solid;
-    margin-left:30px;
-    margin-right:20px;
-  
+    border-style: solid;
+    margin-left: 5%;
+    margin-right:  3%;
+
 }
-.line2{
-    border-color:white;
-    border-width: thin;
-    border-style:solid;
-    margin-left:30px;
-    margin-right:20px;
-    
+
+.bluebox h1 {
+    padding-top: 130px;
+    margin-left: 5%;
+    font-family: "Teko", sans-serif;
+    font-size: 45px;
+    color: white;
+
 }
-.stuff1{
-    color:white;
-    margin-left:30px;
-    font-family:"Roboto";
+
+.bluebox h2 {
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    margin-left: 5%;
+    font-size: 1.4em;
 }
-.stuff2{
-    color:white;
-    margin-left:30px;
-    font-family:"Roboto";
+
+.bluebox h3 {
+    color: white;
+    margin-left: 5%;
+    margin-bottom: -20px;
+    font-family: "Teko", sans-serif;
+
 }
+
+.bluebox h4 {
+    color: white;
+    font-size: large;
+    margin-left: 5%;
+    font-family: "Roboto";
+}
+
+.bluebox #email{
+    text-decoration: none;
+    display :flex;
+    flex-direction: row;
+    align-items: center
+}
+.bluebox #email svg{
+    display: none;
+    margin-left: 10%;
+    width: 100%;
+    fill:#979797;
+}.bluebox #email:hover svg{
+    display: block;
+}
+
 
 
 
 .ctr-1 {
-    height: 100vh;
+    height: fit-content;
     width: 70%;
-    background:#FFFEF2;
+    background: #ffffff;
     margin: 0 auto;
-    padding: 20px;
+    padding: 3% 5%;
     color: #111111;
-    max-width: 90%;
     font-size: 1.2em;
     line-height: 1.6em;
     box-sizing: border-box;
-    
-   
-    transform: translateY(-100px);
+    transform: translateY(-5vh);
 }
-
-.Research{
-    font-family:"Roboto";
-}
-.quote{
-    font-family:"Teko";
+.quote {
+    font-family: "Permanent Marker", cursive;
+    font-weight: 400;
+    font-style: normal;
+    color: #868686;
+    font-weight: lighter;
     border-bottom-color: black;
     border-top-color: rgba(255, 255, 255, 0);
     border-right-color: rgba(255, 255, 255, 0);
-    border-left-color:rgba(255, 255, 255, 0);
+    border-left-color: rgba(255, 255, 255, 0);
     border-style: solid;
     border-width: 2px;
-    padding-bottom:20px;
+    padding-bottom: 20px;
+}
+.ctr-1>p {
+    font-size: 1em;
+    font-weight: 500;
+    line-height: 100%;
+    font-family: "Gill Sans", sans-serif;
+}
+
+.Research {
+    font-family: "Roboto";
+}
+.Research h2{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #ff4805;
+}
+
+.Research ul  {
+    list-style-type: none; /* No default bullets */
+    padding-left: 0; /* Remove padding */
+}
+.Research ul  li {
+    font-family: monospace;
+    font-size: 1.2em;
+    padding-left: 1em; /* Space for the custom bullet */
+    text-indent: -1em; /* Align text with container */
+}
+.Research ul  li::before {
+    content: '• '; /* Custom bullet */
+    color: black; /* Bullet color */
+    padding-right: 0.5em; /* Space between bullet and text */
+}
+.Research ul li:nth-child(even){
+    background-color: rgba(229, 238, 243, 0.845);
 }
