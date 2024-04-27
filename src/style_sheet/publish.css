@@ -1,39 +1,39 @@
-.Heading{
-font-family:  Bungee Hairline;
-font-size: 25px;
-font-weight: bolder;
-margin-left: 550px;
-color:white;
-margin-bottom:-1px;
-padding-top:20px;
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
+
+
+.container{
+    width: 80%;
+    margin: 5vh auto;
 }
-.Heading{
-font-family:  Bungee Hairline;
-font-size: 25px;
-margin-left: 550px;
-color:white;
-margin-bottom:-1px;
-padding-top:20px;
-}
-.H{
-    background:linear-gradient(rgb(2, 75, 170),rgba(255, 255, 255, 0.493));
-    margin-top: 100px;
-    height:100px;
-    
+.container h1{
+    color: #ff4805;
 }
 
-.line{
-    border-color:white;
-    border-width: 2px;
-    border-style: solid;
-  
-    margin-bottom:50px;
+.container a {
+    text-decoration: none;
 }
 
-.publ{
-    margin-left:120px;
-    margin-right:60px;
+.container ul {
+    list-style-type: none;
+    padding-left: 0;
+    margin-left: 2%;
 }
-.cont{
-font-family: "Titillium Web", sans-serif;
+
+.container ul li { 
+    font-family: "Titillium Web", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 1.2em;
+    padding-left: 1em;
+    text-indent: -1em;
+}
+
+.container ul li::before {
+    content: '• ';
+    color: black;
+    padding-right: 0.5em;
+}
+
+.container ul li:nth-child(even) {
+    background-color: rgba(229, 238, 243, 0.845);
 }
