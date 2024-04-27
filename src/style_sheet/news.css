@@ -1,89 +1,139 @@
-.gallery {
-    place-items: center;
-    position: relative;
-    width: 300px;
-    height: 200px;
-    transform-style: preserve-3d;
-    animation: rotate 35s linear infinite;
+#scroll-container {
+    position: sticky;
+  background-color: blue;
+  font-size: large;
+  color: white;
+  overflow: hidden;
 }
 
-@keyframes rotate {
-    from {
-        transform: perspective(1200px) rotateY(0deg);
-    }
-
-    to {
-        transform: perspective(1200px) rotateY(360deg);
-    }
+#scroll-text {
+  -moz-transform: translateX(100%);
+  -webkit-transform: translateX(100%);
+  transform: translateX(100%);
+  -moz-animation: right-left 15s linear infinite;
+  -webkit-animation: right-left 15s linear infinite;
+  animation: right-left 15s linear infinite;
 }
 
-.gallery span {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    transform-origin: center;
-    transform-style: preserve-3d;
-    transform: rotateY(calc(var(--i) * 45deg)) translateZ(380px);
+@-moz-keyframes right-left {
+  from { -moz-transform: translateX(100%); }
+  to { -moz-transform: translateX(-100%); }
 }
 
-.gallery span img {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+@-webkit-keyframes right-left {
+  from { -webkit-transform: translateX(100%); }
+  to { -webkit-transform: translateX(-100%); }
 }
 
-.photo-slide .cont {
-    display: flex;
-    margin: 0 auto;
-    justify-content: center;
-    align-items: center;
-    height: 400px;
-}
-
-.photo-slide {
-    display: flex;
-    flex-direction: column;
-    margin: 2vh auto;
-    padding: 15px;
-
-}
-
-hr {
-    background-color: red;
-    height: 1px;
-    border: 0;
-    width: 90%;
-    margin: 0 auto;
-}
-.mySlides
-{
-    width: 600px;
-    height: 400px;
-    
-}
-.slideshow
-{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-@media screen and (max-width: 700px) {
-    .mySlides
-    {
-        width: 400px;
-        height: 300px;
-    }
+@keyframes right-left {
+  from {
+    -moz-transform: translateX(100%);
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%);
   }
-  @media screen and (max-width: 495px) {
-    .mySlides
-    {
-        width: 350px;
-        height: 285px;
-    }
+  to {
+    -moz-transform: translateX(-100%);
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
   }
-  .desc
-  {
-    padding-top: 20px;
-    font-size: large;
+}
+
+.page-section {
+  width: 100%;
+  margin: 25px auto;
+  /* padding: 20px; */
+  color: #000000;
+  max-width: 90%;
+  font-size: 1.2em;
+  line-height: 1.6em;
+  box-sizing: border-box;
+  /* background-color: #252525c0; */
+  border-radius: 1em;
+}
+.band {
+  width: 90%;
+  max-width: 1240px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  grid-gap: 20px;
+}
+
+@media (min-width: 30em) {
+  .band {
+      grid-template-columns: 1fr 1fr;
   }
+}
+
+@media (min-width: 60em) {
+  .band {
+      grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.card {
+  background: rgb(71, 81, 141);
+  text-decoration: none;
+  border: solid 1px #838485ad;
+  color: #d0d0d0;
+  box-shadow: 0 2px 5px rgba(208, 208, 208, 0.289);
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  position: relative;
+  top: 0;
+  transition: all 0.1s ease-in;
+}
+
+.card:hover {
+  filter: opacity(0.6);
+  top: -4px;
+  box-shadow: 0 4px 5px rgba(177, 241, 238, 0.363);
+}
+
+.card article {
+  padding: 20px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card h1 {
+  font-size: 20px;
+  margin: 0;
+  color: #ffffff;
+}
+
+.card p {
+  flex: 1;
+  line-height: 1.4;
+}
+
+.card span {
+  font-size: 12px;
+  font-weight: bold;
+  color: #999;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin: 2em 0 0 0;
+}
+
+.card .thumb {
+  padding-bottom: 60%;
+  /* width: 100%; 
+  height: 100%; */
+  background-size: cover;
+  background-position: center center;
+}
+
+@media (min-width: 60em) {
+  .item-1 {
+      grid-column: 1/span 2;
+  }
+
+  .item-1 h1 {
+      font-size: 24px;
+  }
+}

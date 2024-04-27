@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Varela+Round&display=swap');
 .img {
     background-image: url('../asset/main.JPG');
     background-size: cover;
@@ -103,11 +103,12 @@
     transform: translateY(-5vh);
 }
 .quote {
-    font-family: "Permanent Marker", cursive;
+    
+    font-family: "Lobster", sans-serif;
     font-weight: 400;
-    font-style: normal;
+    font-style: larger;
     color: #868686;
-    font-weight: lighter;
+    font-weight: normal;
     border-bottom-color: black;
     border-top-color: rgba(255, 255, 255, 0);
     border-right-color: rgba(255, 255, 255, 0);
