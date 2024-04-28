@@ -96,6 +96,7 @@ footer .logos{
     height: fit-content;
     flex-direction: row;
     justify-content: space-evenly;
+    align-items: center;
 
 }
 
